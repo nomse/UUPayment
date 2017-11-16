@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_bank_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_bg_bank_card" />
+
+        <TextView
+            android:id="@+id/text_bank_pan"
+            style="@style/ListCardInfoTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="**** 8888"
+            android:textColor="@color/text_white"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_last_trans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp" >
+
+        <TextView
+            style="@style/CardDtlTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="最后的交易"
+            android:textSize="@dimen/fontsize_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="#19000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/text_last_trans_time"
+                style="@style/CardDtlTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="2017/01/01 12:00" />
+
+            <TextView
+                android:id="@+id/text_last_trans_amount"
+                style="@style/CardDtlTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/CardDtlTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="1小时前"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="35dp" >
+
+        <TextView
+            android:id="@+id/text_trans_dtl_info_bank"
+            style="@style/CardDtlTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="来自：招商银行"
+            android:textSize="@dimen/fontsize_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="#19000000" />
+
+        <TextView
+            android:id="@+id/text_trans_dtl_info_content"
+            style="@style/CardDtlTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="感谢使用招商银行卡，购买汽车周边产品获得10倍积分!" />
+    </LinearLayout>
+
+</LinearLayout>

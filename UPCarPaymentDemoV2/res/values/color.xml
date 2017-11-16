@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_black">#000000</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_blue">#3485E1</color>
+
+    <color name="main_bg">@color/color_white</color>
+
+    <color name="color_divider">#e6e6e6</color>
+    <color name="title">#0185d0</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#88000000</color>
+    <color name="text_green">#00b4ab</color>
+    <color name="dialog_btn_bg">#f4f4f4</color>
+
+    <!-- car pay -->
+    <color name="tab_normal">#545454</color>
+    <color name="tab_foucs">#3485E1</color>
+
+    <color name="text_summary">#4b4b4b</color>
+    <color name="text_sencondary">#484848</color>
+    <color name="text_small">#797878</color>
+
+    <color name="text_black">#000000</color>
+    <color name="text_white">#F5F5F5</color>
+    <color name="text_gray">#A4A4A4</color>
+    <color name="text_yellow">#F5AD34</color>
+    <color name="text_red">#FF1331</color>
+    <color name="text_light_red">#C4524F</color>
+
+</resources>

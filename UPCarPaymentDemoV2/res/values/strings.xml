@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">银联汽车钱包</string>
+
+    <string name="tab_lebel_main_home">首页</string>
+    <string name="tab_lebel_main_card">卡管家</string>
+    <string name="tab_lebel_main_trans">交易记录</string>
+
+    <string name="activity_name_card_list">银行卡列表</string>
+    <string name="activity_name_card_add">添加银行卡</string>
+    <string name="activity_name_card_details">银行卡详情</string>
+    <string name="activity_name_card_trans_details">交易明细</string>
+    <string name="activity_name_shopping_car_goods">汽车周边</string>
+    <string name="activity_name_shopping_goods_detail">商品详情</string>
+    <string name="activity_name_shopping_order">订单</string>
+
+    <string name="module_label_1">拥堵收费</string>
+    <string name="module_label_2">高速收费</string>
+    <string name="module_label_3">电子商务</string>
+    <string name="module_label_4">充电加油</string>
+    <string name="module_label_5">停车收费</string>
+    <string name="module_label_6">ETC收费</string>
+
+    <string name="selection_item_label_1">人气推荐</string>
+
+    <string name="label_default_card">默认卡</string>
+    <string name="label_add_card">添加银行卡</string>
+    <string name="notice_card_del">确定删除银行卡？</string>
+    <string name="btn_label_card_del_confirm">确定删除</string>
+    <string name="btn_label_card_del_cancel">我再想想</string>
+    <string name="notice_bank_service">拨打%s客服电话？</string>
+    <string name="notice_set_default_card">请先设置默认卡！</string>
+
+    <string name="label_pan_end">尾号 %s</string>
+    <string name="label_contact_bank">联系%s</string>
+
+    <string name="label_trans_dtl_info_bank">来自：%s</string>
+    <string name="label_trans_dtl_info_content">使用%s卡，可享受购买汽车周边产品98折优惠！</string>
+    <string name="label_trans_dtl_info_cmcc">使用招商银行卡信用卡，购买汽车周边产品可获得10倍积分!</string>
+    <string name="label_trans_dtl_info_shbank">使用上海银行卡，可享高速公路5.00元优惠!</string>
+
+    <string name="tips_loading">正在加载数据,请稍候&#8230;</string>
+
+    <string name="tag_pan">银行卡号</string>
+    <string name="error_validate">请输入正确的</string>
+
+    <string name="hint_name">请输入姓名</string>
+    <string name="hint_cardnumber">请输入62开头的银行卡号</string>
+    <string name="hint_valid_date">示例：06/20 输入0620</string>
+    <string name="hint_safe_code">银行卡背面三位安全码</string>
+    <string name="hint_phonenumber">请输入预留的手机号码</string>
+    <string name="hint_verify_code">请输入6位验证码</string>
+    
+    <string name="label_get_verify_code">获取验证码</string>
+    <string name="label_reget_verify_code">重新获取验证码(%2s秒)</string>
+    <string name="default_time">88:88:88</string>
+</resources>

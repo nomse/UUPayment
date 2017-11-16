@@ -1,0 +1,269 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.unionpay.payment.carpay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/layout_goods_bottom"
+        style="@style/MainWhiteLayout"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="￥68.00"
+            android:textColor="@color/text_red"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_shopping_buy"
+            style="@style/ShoppingRedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="立即购买" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_goods_bottom"
+        android:focusable="false"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <com.youth.banner.Banner
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/banner_goods"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/color_white"
+                app:image_scale_type="fit_center"
+                app:indicator_drawable_selected="@drawable/ic_indicator_selected"
+                app:indicator_drawable_unselected="@drawable/ic_indicator_normal"
+                app:is_auto_play="false" />
+
+            <LinearLayout
+                style="@style/MainWhiteLayout"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/SummaryText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="比亚迪F3G3G5L3S6S7元唐宋思锐秦速锐滤请器滤芯原厂" />
+
+                <TextView
+                    style="@style/SecondaryText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="比亚迪原厂  品质有保障"
+                    android:textColor="@color/text_light_red" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainWhiteLayout"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/SecondaryText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/ic_location"
+                        android:text="送至" />
+
+                    <TextView
+                        style="@style/SecondaryText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:paddingLeft="5dp"
+                        android:text="上海市浦东新区顾唐路1899号" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/SecondaryText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:paddingLeft="5dp"
+                        android:text="现货"
+                        android:textColor="@color/text_red" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/SecondaryText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="运费" />
+
+                    <TextView
+                        style="@style/SecondaryText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:paddingLeft="5dp"
+                        android:text="包邮" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainWhiteLayout"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_blue"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/SmallWhiteText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:text="配件名称" />
+
+                    <TextView
+                        style="@style/SmallWhiteText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:text="配件图号" />
+
+                    <TextView
+                        style="@style/SmallWhiteText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:text="所属系统" />
+
+                    <TextView
+                        style="@style/SmallWhiteText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:text="适用范围" />
+
+                    <TextView
+                        style="@style/SmallWhiteText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:text="配件尺寸" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        style="@style/SmallText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:text="机滤芯" />
+
+                    <TextView
+                        style="@style/SmallText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:text="S5262313A2076" />
+
+                    <TextView
+                        style="@style/SmallText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:text="机油滤清器" />
+
+                    <TextView
+                        style="@style/SmallText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:text="适用于比亚迪秦100发动机" />
+
+                    <TextView
+                        style="@style/SmallText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:text="17*9.5*9.5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/main_bg"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_filter_dtl" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

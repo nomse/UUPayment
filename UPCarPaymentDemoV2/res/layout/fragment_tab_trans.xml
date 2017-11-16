@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/SummaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="@dimen/fontsize_normal"
+        android:text="交易记录" />
+
+    <TextView
+        style="@style/SecondaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textSize="@dimen/fontsize_small"
+        android:text="本月" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_trans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="0px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:paddingBottom="10dp"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

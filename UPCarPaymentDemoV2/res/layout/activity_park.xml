@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stop"
+    tools:context="com.unionpay.payment.carpay.activity.EleDemo" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="500dp" >
+
+        <com.unionpay.payment.carpay.widget.TimingView
+            android:id="@+id/timing_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingLeft="135dp"
+            app:itemBackground="@drawable/calculagraph1"
+            app:itemButton="@drawable/calculagraph2"
+            app:size="4" >
+        </com.unionpay.payment.carpay.widget.TimingView>
+    </LinearLayout>
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="700dp"
+	    >
+	    <com.unionpay.payment.carpay.widget.LEDView 
+	        android:id="@+id/ledviewst"
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content" 
+	        android:paddingLeft="130dp" 
+	        ></com.unionpay.payment.carpay.widget.LEDView>
+	    <View
+            android:layout_width="60px"
+            android:layout_height="6px"
+            android:layout_margin="21px"
+            android:background="#e7e7e7"
+            android:layout_gravity="center_vertical"
+            ></View>
+	     <com.unionpay.payment.carpay.widget.LEDView 
+	        android:id="@+id/ledviewend"
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"
+	        android:paddingRight="130dp"  
+	        ></com.unionpay.payment.carpay.widget.LEDView>
+	</LinearLayout>
+	<Button 
+	    android:id="@+id/goToHome"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="结束停车"
+	    android:textSize="25dp"
+	    android:layout_alignParentBottom="true"
+	    android:visibility="gone"
+	    />
+	<!-- 下覆盖物start -->
+
+    <LinearLayout
+        android:id="@+id/chargeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:alpha="0.8"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:visibility="gone"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结算信息"
+                    android:textColor="#e7e7e7"
+                    android:textSize="28dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#e7e7e7" >
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="缴扣金额:"
+                        android:textColor="#e7e7e7"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:background="#e7e7e7"
+                        android:id="@+id/price"
+                        android:text="5.00元"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="缴费卡号:"
+                        android:textColor="#e7e7e7"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/cardNo"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:background="#e7e7e7"
+                        android:text="8888"
+                        android:textColor="#4c4c4c"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="缴扣日期:"
+                        android:textColor="#e7e7e7"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:background="#e7e7e7"
+                        android:text="2017-05-30"
+                        android:textColor="#4c4c4c"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e7e7e7" >
+        </View>
+
+        <!-- 所在路段信息 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="停车场信息"
+                    android:textColor="#e7e7e7"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#e7e7e7" >
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="所在停车场:"
+                        android:textColor="#e7e7e7"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:background="#e7e7e7"
+                        android:text="sh1635"
+                        android:textColor="#4c4c4c"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开始时间:"
+                        android:textColor="#e7e7e7"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:background="#e7e7e7"
+                        android:id="@+id/startTime"
+                        android:text="inters0239"
+                        android:textColor="#4c4c4c"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="结束时间:"
+                        android:textColor="#e7e7e7"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:background="#e7e7e7"
+                        android:id="@+id/endTime"
+                        android:text="inters0290"
+                        android:textColor="#4c4c4c"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e7e7e7" >
+        </View>
+
+        <!-- 车辆信息 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车辆信息"
+                    android:textColor="#e7e7e7"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#e7e7e7" >
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textSize="20dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车辆编号:"
+                        android:textColor="#e7e7e7"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="#e7e7e7"
+                        android:text="13399"
+                        android:textColor="#4c4c4c"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="驾驶员编号:"
+                        android:textColor="#e7e7e7"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="#e7e7e7"
+                        android:text="BYD001"
+                        android:textColor="#4c4c4c"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e7e7e7" >
+        </View>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+com.pax.testjavasdk.BuildConfig
+com.pax.testjavasdk.R
+com.pax.testjavasdk.R$attr
+com.pax.testjavasdk.R$dimen
+com.pax.testjavasdk.R$drawable
+com.pax.testjavasdk.R$id
+com.pax.testjavasdk.R$layout
+com.pax.testjavasdk.R$string
+com.pax.testjavasdk.R$style
+pax.util.OsPaxSMApi:
+    public static native int SM4sw(byte[],byte[],byte[],byte[],int)
+pax.util.SMS4:
+    public static final int ENCRYPT
+    public static final int DECRYPT
+    public static final int ROUND
+    private static final int BLOCK
+    172:175:public void xors(byte[],byte[])
+    178:211:public int sms4_cbc(byte[],int,byte[],byte[],byte[],int)
+pax.util.Utils:
+    5:5:public Utils()

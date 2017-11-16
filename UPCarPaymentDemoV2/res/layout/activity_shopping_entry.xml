@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_car_goods_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_bg_car_goods"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:id="@+id/layout_car_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_blue_frame"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_car_filter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/MainWhiteText"
+                        android:text="车内PM2.5超标" />
+
+                    <TextView
+                        style="@style/MainWhiteText"
+                        android:text="点此订购更换滤芯" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/layout_car_filter"
+            android:layout_below="@+id/layout_car_filter"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="-8dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_blue_line1" />
+
+        <LinearLayout
+            android:id="@+id/layout_car_oil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/layout_car_filter"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_blue_frame"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/MainWhiteText"
+                        android:text="已经运行4550公里" />
+
+                    <TextView
+                        style="@style/MainWhiteText"
+                        android:text="壳牌机油有优惠" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_car_oil" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_car_oil"
+            android:layout_marginRight="-2dp"
+            android:layout_marginTop="-10dp"
+            android:layout_toLeftOf="@+id/layout_car_oil"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_blue_line2" />
+
+        <LinearLayout
+            android:id="@+id/layout_car_insurance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_car_wheel"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ic_blue_frame"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_car_insurance" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/MainWhiteText"
+                        android:text="安全合规驾驶" />
+
+                    <TextView
+                        style="@style/MainWhiteText"
+                        android:text="阳光车险更安心" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_car_insurance"
+            android:layout_alignLeft="@+id/layout_car_insurance"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginLeft="-2dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_blue_line3" />
+
+        <LinearLayout
+            android:id="@+id/layout_car_wheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_blue_frame"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/MainWhiteText"
+                        android:text="轮胎失压" />
+
+                    <TextView
+                        style="@style/MainWhiteText"
+                        android:text="点此查看最近4S店" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_car_wheel" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_car_wheel"
+            android:layout_alignRight="@+id/layout_car_wheel"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginRight="-1dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_blue_line4" />
+    </RelativeLayout>
+
+</LinearLayout>

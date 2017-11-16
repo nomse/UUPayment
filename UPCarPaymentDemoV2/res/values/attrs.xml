@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TimingView">
+        <attr name="size" format="integer"></attr>
+        <attr name="itemBackground" format="reference|color"></attr>
+        <attr name="itemButton" format="reference|color"></attr>
+    </declare-styleable>
+
+</resources>
